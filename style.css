@@ -1,0 +1,431 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: spotify-circular;
+    src: url('https://encore.scdn.co/1.2.3/CircularSpotify-UI-Latin-OS2v3-Book.woff2') format('woff2'), url('https://encore.scdn.co/1.2.3/CircularSpotify-UI-Latin-OS2v3-Book.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: fallback;
+  }
+  @font-face {
+    font-family: spotify-circular;
+    src: url('https://encore.scdn.co/1.2.3/CircularSpotify-UI-Latin-OS2v3-Bold.woff2') format('woff2'), url('https://encore.scdn.co/1.2.3/CircularSpotify-UI-Latin-OS2v3-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: fallback;
+  }
+  @font-face {
+    font-family: spotify-circular;
+    src: url('https://encore.scdn.co/1.2.3/CircularSpotify-UI-Latin-OS2v3-Black.woff2') format('woff2'), url('https://encore.scdn.co/1.2.3/CircularSpotify-UI-Latin-OS2v3-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: fallback;
+  }
+
+.body-container {
+    font-family: spotify-circular;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0% auto;
+}
+
+.section1 {
+    background-color: rgb(80, 155, 245);
+    color: #ffffff;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+   
+}
+    .section1>article {
+        margin: 0% auto;
+        padding: 0px 15px 35px;
+        box-sizing: border-box;  
+    }
+
+    .top-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;   
+    }
+
+        .top-container-left {
+            width: 50%;
+            display: flex;
+            justify-content: flex-start;
+        }
+            .logo{width: 132px; height: 41.89px;}
+
+        .top-container-right {
+            width: 50%;
+            display: inline
+        }
+            .menu-list {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;     
+            }
+                .no-style {
+                    list-style: none;
+                }
+                .menu-list > li {
+                    padding: 28px 17px;
+                }
+
+                .menu-list > li >a {
+                    color: #ffffff;
+                    font-size: 16px;
+                    font-weight: 700;
+                    text-decoration: none;
+                }
+
+    .header {
+        margin:0px 0px 30px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        padding:100px 0px;
+    }
+
+    .header-title1-container>h1 {
+        line-height: 1.2;
+        margin: 0px;
+        padding: 0px;
+        font-weight: 900;
+        font-size: 80px;
+        width: 100%;
+        max-width: 1140px;
+        display: inline-block;
+    }
+
+    .header-title2-container>h2{
+        font-size: 30px;
+        margin-top: 30px;
+    }
+
+    .header-plan-container{
+        margin-top: 35px;
+    }
+    .header-legal-container {font-size: 12px;}
+    .header-legal-container > a {
+        color: #ffffff;
+    }
+
+.section2 {
+    color: #000000;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+    .section2>article {
+        margin: 0% auto;
+        padding: 75px 15px;
+        box-sizing: border-box;
+        display: block;
+}
+    .title-section2 {
+        font-size: 48px;
+        font-weight: 900;
+        display: flex;
+        justify-content: center;
+    }
+    .main-section2 {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        justify-items: center;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        padding-inline-start: 40px;
+    }
+    .box {
+        vertical-align: top;
+        display: block;
+        width: 270px;
+        margin-bottom: 20px;
+        justify-content: center;
+        justify-items: center; 
+        padding-top: 90px;
+    }
+
+    .boxes-img {
+        width: 142px;
+        height: 142px; 
+        margin: 0px auto 40px;
+        display:block; 
+    }
+
+    .subtitle-section2 {
+        display: block;
+        text-align: center;
+    }
+
+    .bold-subtitle {
+        font-size: 21px;
+        font-weight: bold;
+        display: block;
+        box-sizing: border-box;
+        margin: 0px 0px 10px;
+    }
+
+.section3{
+    background-color: rgb(245, 245, 245);
+    color: #000000;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+    .section3>article {
+        margin: 0% auto;
+        padding: 75px 15px;
+        box-sizing: border-box;
+        display: block;
+    }
+    .title-section3 {
+        font-size: 40px;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 40px;
+    }
+    .grid {
+        max-width: 1140px;
+        display: grid;
+        justify-content: center;
+        margin: 50px 0px 26px;
+        grid-template-rows: repeat(4, auto);
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:
+         "A B C D"
+         "E F G H"
+         "I J K L"
+         "M N O P"
+    }
+    .grid>ul {
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+    }
+    .grid>ul>li {
+        margin-bottom: 5px;
+        display: flex;
+        flex-direction: row;  
+    }
+    .grid>ul>li>svg {
+       /* width: 50%;*/
+        size: 24px;
+        padding-right: 10px;
+        box-sizing: border-box;
+        display: block;
+    }
+    .grid>ul>li>p {
+        /*width: 50%;*/
+        display: block;
+    }
+        
+        .grid-A {
+            grid-area: A;
+            padding: 16px 16px 0px;
+            margin: 0px 16px 0px 0px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 10px 10px 0px 0px;
+            box-shadow: rgb(255, 255, 255) 0px 8px 0px 0px, rgba(0, 0, 0, 0.3) 0px 0px 8px;
+        }
+        .grid-E {
+            grid-area: E;
+            padding: 20px 16px 16px;
+            margin-right: 16px;
+            background-color: rgb(255, 255, 255);
+            box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 8px;
+        }
+        .grid-I {
+            grid-area: I;
+            padding: 0px 16px 16px;
+            margin-right: 16px;
+            background-color: rgb(255, 255, 255);
+            
+        }
+        .grid-M {
+            grid-area: M;
+            padding: 4px 16px 16px;
+            margin-right: 16px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 0px 0px 10px 10px;
+            box-shadow: rgb(255, 255, 255) 0px -9px 0px 0px, rgba(0, 0, 0, 0.3) 0px 0px 8px;
+        }
+
+        .grid-B {
+            grid-area: B;
+            padding: 16px 16px 0px;
+            margin: 0px 16px 0px 0px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 10px 10px 0px 0px;
+            box-shadow: rgb(255, 255, 255) 0px 8px 0px 0px, rgba(0, 0, 0, 0.3) 0px 0px 8px;
+        }
+        .grid-F {
+            grid-area: F;
+            padding: 20px 16px 16px;
+            margin-right: 16px;
+            background-color: rgb(255, 255, 255);
+            box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 8px;
+        }
+        .grid-J {
+            grid-area: J;
+            padding: 0px 16px 16px;
+            margin-right: 16px;
+            background-color: rgb(255, 255, 255);
+        }
+        .grid-N {
+            grid-area: N;
+            padding: 4px 16px 16px;
+            margin-right: 16px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 0px 0px 10px 10px;
+            box-shadow: rgb(255, 255, 255) 0px -9px 0px 0px, rgba(0, 0, 0, 0.3) 0px 0px 8px;
+        }
+
+        .grid-C {
+            grid-area: C;
+            padding: 16px 16px 0px;
+            margin: 0px 16px 0px 0px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 10px 10px 0px 0px;
+            box-shadow: rgb(255, 255, 255) 0px 8px 0px 0px, rgba(0, 0, 0, 0.3) 0px 0px 8px;
+        }
+        .grid-G {
+            grid-area: G;
+            padding: 20px 16px 16px;
+            margin-right: 16px;
+            background-color: rgb(255, 255, 255);
+            box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 8px;
+        }
+        .grid-K {
+            grid-area: K;
+            padding: 0px 16px 16px;
+            margin-right: 16px;
+            background-color: rgb(255, 255, 255);
+        }
+        .grid-O {
+            grid-area: O;
+            padding: 4px 16px 16px;
+            margin-right: 16px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 0px 0px 10px 10px;
+            box-shadow: rgb(255, 255, 255) 0px -9px 0px 0px, rgba(0, 0, 0, 0.3) 0px 0px 8px;
+        }
+
+        .grid-D {
+            grid-area: D;
+            padding: 16px 16px 0px;
+            margin: 0px 16px 0px 0px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 10px 10px 0px 0px;
+            box-shadow: rgb(255, 255, 255) 0px 8px 0px 0px, rgba(0, 0, 0, 0.3) 0px 0px 8px;
+        }
+        .grid-H {
+            grid-area: H;
+            padding: 20px 16px 16px;
+            margin-right: 16px;
+            background-color: rgb(255, 255, 255);
+            box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 8px;
+            box-decoration-break: slice;
+        }
+        .grid-L {
+            grid-area: L;
+            padding: 0px 16px 16px;
+            margin-right: 16px;
+            background-color: rgb(255, 255, 255);
+        }
+        .grid-P {
+            grid-area: P;
+            padding: 4px 16px 16px;
+            margin-right: 16px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 0px 0px 10px 10px;
+            box-shadow: rgb(255, 255, 255) 0px -9px 0px 0px, rgba(0, 0, 0, 0.3) 0px 0px 8px;
+        }
+.footer-container {
+    background-color: black;
+    color: #ffffff;
+    width: 100%;
+    
+}
+    .footer-container>div {
+        padding: 30px 250px 20px;
+        margin: 0% auto;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+    }
+    .footer-left {
+        width: 50%;
+        display: flex;
+        align-items: flex-end;
+    }
+        .footer-left > a {
+            color: #919496;
+            font-size: 12px;
+            font-weight: 400;
+            text-decoration: none;
+            padding: 12px;     
+        }
+
+    .footer-right {
+        width: 50%;
+        font-size: 12px;
+        color: #919496;
+        display: flex;
+        text-align: right;
+        flex-direction: column;  
+    }
+        #spain-flag {
+            width: 24px;
+            height: 18px;
+        }
+        #copyright {
+            padding: 12px 0px;
+        }
+
+.mes-gratis {
+    background-color: rgb(46, 119, 208);
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-weight: 900;
+    border-radius: 4px;
+    padding: 4px 8px;
+    margin-block-start: 0px;
+    margin-block-end: 10px;
+    display: inline-block;
+}
+.green-box {
+    background-color: rgb(29, 185, 84);
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    border-radius: 500px;
+    padding: 17px 48px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.style-mini {
+    color: rgb(83, 83, 83);
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.style-conditions {
+    color: rgb(83, 83, 83);
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 400;
+}
