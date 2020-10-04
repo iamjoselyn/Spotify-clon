@@ -218,14 +218,14 @@
         flex-direction: row;  
     }
     .grid>ul>li>svg {
-       /* width: 50%;*/
+        width: 20%;
         size: 24px;
         padding-right: 10px;
         box-sizing: border-box;
         display: block;
     }
     .grid>ul>li>p {
-        /*width: 50%;*/
+        width: 80%;
         display: block;
     }
         
@@ -243,13 +243,15 @@
             margin-right: 16px;
             background-color: rgb(255, 255, 255);
             box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 8px;
+            clip-path: inset(0px -15px 0px -15px);
         }
         .grid-I {
             grid-area: I;
             padding: 0px 16px 16px;
             margin-right: 16px;
             background-color: rgb(255, 255, 255);
-            
+            box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 8px;
+            clip-path: inset(0px -15px 0px -15px);    
         }
         .grid-M {
             grid-area: M;
@@ -274,12 +276,15 @@
             margin-right: 16px;
             background-color: rgb(255, 255, 255);
             box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 8px;
+            clip-path: inset(0px -15px 0px -15px);
         }
         .grid-J {
             grid-area: J;
             padding: 0px 16px 16px;
             margin-right: 16px;
             background-color: rgb(255, 255, 255);
+            box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 8px;
+            clip-path: inset(0px -15px 0px -15px);
         }
         .grid-N {
             grid-area: N;
@@ -304,12 +309,15 @@
             margin-right: 16px;
             background-color: rgb(255, 255, 255);
             box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 8px;
+            clip-path: inset(0px -15px 0px -15px);
         }
         .grid-K {
             grid-area: K;
             padding: 0px 16px 16px;
             margin-right: 16px;
             background-color: rgb(255, 255, 255);
+            box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 8px;
+            clip-path: inset(0px -15px 0px -15px);
         }
         .grid-O {
             grid-area: O;
@@ -334,13 +342,16 @@
             margin-right: 16px;
             background-color: rgb(255, 255, 255);
             box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 8px;
-            box-decoration-break: slice;
+            clip-path: inset(0px -15px 0px -15px);
         }
         .grid-L {
             grid-area: L;
             padding: 0px 16px 16px;
             margin-right: 16px;
             background-color: rgb(255, 255, 255);
+            box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 8px;
+            clip-path: inset(0px -15px 0px -15px);
+            
         }
         .grid-P {
             grid-area: P;
@@ -399,8 +410,7 @@
     font-weight: 900;
     border-radius: 4px;
     padding: 4px 8px;
-    margin-block-start: 0px;
-    margin-block-end: 10px;
+    margin-bottom: 20px;
     display: inline-block;
 }
 .green-box {
@@ -413,7 +423,16 @@
     padding: 17px 48px;
     display: inline-block;
     text-decoration: none;
+    text-align: center;
 }
+.line{
+    align-self: stretch;
+    border-color: rgb(204, 204, 204);
+    margin: auto 0px 0px;
+    
+    border-top: 1px solid #EFEFEF;
+}
+
 
 .style-mini {
     color: rgb(83, 83, 83);
@@ -421,6 +440,7 @@
     line-height: 16px;
     font-weight: 400;
     text-align: left;
+    margin: 6px 0px 12px;
 }
 
 .style-conditions {
@@ -428,4 +448,15 @@
     font-size: 12px;
     line-height: 16px;
     font-weight: 400;
+}
+.style-grid{
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+.style-grid-cuenta {
+    margin:0px 0px 20px;
+}
+.empezar-style {
+    display: block;
+    box-sizing: border-box;
 }
